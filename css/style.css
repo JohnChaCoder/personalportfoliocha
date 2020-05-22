@@ -280,12 +280,12 @@ body {
 }
 
 p {
-  font-family: 'Tahoma';
+  font-family: 'Tahoma', sans-serif;
   color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
 }
 h1 {
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', sans-serif;
   color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
 }
@@ -364,7 +364,9 @@ summary {
 .navbar a {
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    /* background-color: rgba(0, 0, 0, 0); */
+    border-radius: 20%;
+    padding: 1px 10px;
     text-decoration-line: none;   /* hides underlines from links */
 }
 .activePage {
@@ -377,22 +379,26 @@ summary {
 }
 
 .navbar a:hover {
-    color: rgb(0, 217, 255);
+    color: rgb(176, 243, 255);
     /* font-weight: bolder; */
-    text-shadow: 1px 1px darkblue;
+    background-color: rgba(0, 255, 255, 0.500);
+    text-shadow: 1.5px 1.5px darkblue;
     animation-name: linkfade;
     animation-duration: 0.2s;
 }
 
 @keyframes linkfade {
     from {color: rgb(255, 255, 255)};
-    to {color: rgb(0, 217, 255)};
+    to {color: rgb(176, 243, 255)};
+    from {background-color: rgba(0, 255, 255, 0)};
+    to {background-color: rgba(0, 255, 255, 0.500)};
     from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
     to {text-shadow: 1px 1px darkblue};
   }
 
 .navbar a:active {
     color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 88, 189);
     text-shadow: 2px 2px black;
 }
 
@@ -439,7 +445,7 @@ a.imgSource:visited {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;+
+  justify-content: space-around;
   margin: auto;
 }
 
@@ -471,7 +477,7 @@ button {
     padding: 4px 15px;
     color: white;
     outline: none;
-    font-family: "Tahoma";
+    font-family: "Ubuntu";
     font-weight: bold;
     font-size: 12px;
     text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
@@ -492,12 +498,12 @@ button {
   margin-top: 0px;
   font-size: 11px;
   font-weight: bold;
-  font-family: Tahoma;
+  font-family: Ubuntu;
 }
 .copyright {
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
-  font-family: Tahoma;
+  font-family: Ubuntu;
   font-weight: bold;
   margin-bottom: -22px;
   font-size: 11px;
@@ -505,7 +511,7 @@ button {
 .creator {
     color: white;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
-    font-family: Tahoma;
+    font-family: Ubuntu;
     font-weight: bold;
     margin-bottom: -10px;
     font-size: 11px;
