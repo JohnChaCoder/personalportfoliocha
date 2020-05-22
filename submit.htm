@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- The Favicon image -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- The CSS Style Sheet -->
+    <style>
+    body {
+        background-color: rgb(57, 91, 191);
+        background-image: url(css/bg/inside-lamp-blue.jpg);
+        image-rendering: optimizeQuality;
+        image-rendering: optimizeSpeed;
+        background-blend-mode: overlay;
+        background-attachment: fixed;   /* Locks the background in the same place */
+        background-position: center;    /* Align the background in the center */
+        text-align: center;
+        margin: 20px;
+    }
+    p {
+        color: white;
+        /*font-family: "Tw Cen MT";*/
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+    a {
+        color: aqua;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+    }
+    h1 {
+        color: white;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+    }
+    h2 {
+        color: white;
+        font-weight: bold;
+    }
+    h3 {
+        color: white;
+        font-weight: bold;
+    }
+    h4 {
+        color: white;
+        font-weight: bold;
+    }
+    h5 {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    h6 {
+        color: white;
+        font-weight: bold;
+    }
+    .imgsize {
+        width: 200px;
+        margin: -5px;
+    }
+    /* .soundPlay{
+        height: 567px;
+        word-break: keep-all;
+    } */
+    button {
+        background-color: dodgerblue;
+        border-color: rgb(0, 108, 216);
+        border-radius: 4px;
+        padding: 4px 15px;
+        color: white;
+        outline: none;
+        font-family: 'Tahoma', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+        text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
+    }
+    button:hover {
+        background-color: rgb(79, 167, 255);
+        border-color: rgb(53, 154, 255);
+        text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
+    }
+    button:active {
+        background-color: rgb(0, 100, 201);
+        border-color: rgb(0, 66, 133);
+        text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
+    }
+    .Error {
+        width: 270px;
+        border-style: double;
+        border-color: white;
+        border-radius: 10px;
+    }
+    .links {
+        margin: 1px;
+    }
+    .navbar {
+        font-style: italic;
+        border-style: double;
+        margin: -1px;
+        background-color: rgb(255,255,255);
+    }
+    .copyright {
+        color: white;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.500);
+        font-family: 'Tahoma', sans-serif;
+        font-weight: bold;
+        margin-bottom: -22px;
+        font-size: 11px;
+    }
+    .maincontent {
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 23vh;
+    }
+    </style>
+    <!-- This is an external font for the Ubuntu Typeface -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thank You! | JOHNNY CHA</title>
 </head>
 <body>
-    
+    <div class="maincontent">
+        <h1>Thanks!</h1>
+        <img class="imgsize" src="images/dualshock.png" alt="image"/>
+        <p>Your response has been sent.<br><br>To return to the main page, click on the button below.</p>
+        
+        <a href=index.html><button>Back</button></a>
+
+        <footer class="copyright">
+            <p class="copyright">Site version v0.00 Pre-release<br>Copyright &copy;2020. All rights reserved.<br><br>Web coding and design by Johnny Cha</b></p>
+        </footer>
+    </div>
 </body>
 </html>
