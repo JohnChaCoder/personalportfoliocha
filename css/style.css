@@ -98,11 +98,17 @@ body {
   justify-content: space-around;
 }
 
+.quickAccess {
+  padding-left: 10px;
+}
+
 .aboutBox {
   /* border: 1px solid sandybrown; */
   width: 260px;
   margin: auto;
   padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   text-align: center;
   border: 4px outset;
   border-radius: 20px;
@@ -119,6 +125,8 @@ body {
   width: 260px;
   margin: auto;
   padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   text-align: center;
   border: 4px outset;
   border-radius: 20px;
@@ -135,6 +143,8 @@ body {
   width: 260px;
   margin: auto;
   padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   text-align: center;
   border: 4px outset;
   border-radius: 20px;
@@ -766,6 +776,8 @@ a.imgSource:visited {
   height: 180px;
   margin: auto;
   padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   text-align: center;
   border: 4px outset;
   border-radius: 20px;
@@ -783,6 +795,8 @@ a.imgSource:visited {
   height: 180px;
   margin: auto;
   padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   text-align: center;
   border: 4px outset;
   border-radius: 20px;
@@ -799,7 +813,9 @@ a.imgSource:visited {
   width: 260px;
   height: 210px;
   margin: auto;
-  padding: px;
+  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 25px;
   text-align: center;
   border: 4px outset;
   border-radius: 20px;
