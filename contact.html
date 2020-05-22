@@ -61,15 +61,17 @@
                             <!-- The fill-out form method -->
                             <div class="formFillout">
                                 <p>Do you have any more questions you want to ask about me? Please fill out this form and I will gladly respond to your questions. (Such questions like these will be put into a Frequently Asked Questions page that’s coming soon.)</p>
-                                <form action="/submit.php" target="_blank" method="POST">
+                                <p><b>Please note that the form functionallity does not work as of yet, please use the other method on the right.</b></p>
+                                <form action="/submit.htm" target="_blank" method="POST" id="mainForm">
                                     <label for="name">Name:</label><br>
                                     <input type="text" id="name" name="name"><br>
                                     <label for="email">Email Address:</label><br>
                                     <input type="text" id="email" name="email"><br>
                                     <label for="askquestions">Questions you may ask about me:</label><br>
                                     <textarea id="askquestions" name="askquestions" cols="45" rows="10"></textarea><br>
-                                    <input type="submit" value="Submit">
+                                    <!-- <input type="submit" value="Submit"> -->
                                 </form>
+                                <button type="submit" form="mainForm" value="Submit">Submit</button>
                             </div>
                             <!-- The email or call method -->
                             <div class="emailCall">

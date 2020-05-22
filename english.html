@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- The Favicon image -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- The CSS Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- This is an external font for the Ubuntu and Sarabun Typefaces -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The English Writings | JOHNNY CHA</title>
+    <!-- The JavaScript content -->
+    <script src="js/main.js"></script>
+    <!-- The message if JavaScript is not supported or is disabled -->
+    <noscript>ERROR: This requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
 </head>
 <body>
-    <h1>This space left blank.</h1>
+    <!-- The Navigation Bar -->
+    <ul class="navbar">
+        <h4>Navigation Bar</h4>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolios</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="date">
+        <p id="clock"></p>
+    </div>
+
+    <script>
+    // Outputs the date and clock
+    var calendar = new Date();
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    //document.getElementById("clock").innerHTML = `Welcome! You've entered on ${days[calendar.getDay()]} ${months[calendar.getMonth()]} ${calendar.getDate()}, ${calendar.getFullYear()} at ${calendar.getHours()}:${calendar.getMinutes()}!`; // for modern browsers only
+    document.getElementById("clock").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (calendar.getHours()) + ':' + (calendar.getMinutes()) + '.'; // for legacy and modern browsers
+    </script>
+    <!-- The message if JavaScript is not supported or is disabled -->
+    <noscript>ERROR: This requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
+        <!-- Title of the page -->
+        <div class="title">
+            <h1>English Writings</h1>
+        </div>
+        <!-- The Main Webpage -->
+        <div class="displayRows">
+            <div class="mainPage2">
+                <p>Here is a brief list of the various assignments and/or projects that I had during English class at CART.</p>
+                <div class="shortStoryInfo">
+                    <div class="imageSStory">
+                        <img class="imgsize" src="images/bust.png" alt="Myself">
+                    </div>
+                    <div class="textSStory">
+                        <h3>Short Story Assignment</h3>
+                        <p>During English class at CART, we had to write up our own conflict/resolution story that involves the main character solving the conflict to form a resolution. For this assignment, I wrote up a short story involving my original character, The Orange Cat, trying to deal with the actions of the Black Cat Group, a group of black cat bullies that aims to bully others for money. The whole story takes place in an elementary school, keeping it inline with a target audience of childrens aged 8-12. The main theme of the whole short story is heavily about bullying and how to stop it. I came up with this story after much brainstorming and thinking on whether or not I should include my original character in a short story that I was writing down at the time. This short story was later adapted into an interactive “Choose your own adventure” story not too long ago.</p>
+                    </div>
+                </div>
+                <div class="readyPlayerOne">
+                    <div class="imageRP1">
+                        <img class="imgsize" src="images/bust.png" alt="Myself">
+                    </div>
+                    <div class="textRP1">
+                        <h3>Identity in Ready Player One</h3>
+                        <p>During English class at CART, we had to read up several chapters on Ernest Cline’s first book, Ready Player One (2012). Ready Player One became one of my favorite books not too long after re-reading it over and over again, and it is about one person who aims to get the “easter egg” for control of the OASIS, a video game superhub set in a dystopian future of 2045. While reading the book, we had to write down daily journals summarizing each chapter up almost nicely and accurately. For this assignment, I had to write up a 1000-word essay detailing about having two identities that make up the growth of the character as the story progresses. In the essay, Wade Watts and Parzival have several differences that makes the main character unique and more careful then at the beginning of the story, because Wade Watts was born around the time where a mass chaos ensues around the world involving a major energy crisis in the 2040’s, and Parzival was unique other than the fact that he does not have to use his real identity as the OASIS was designed to keep users of the OASIS anonymous, he has the talent to not give up and claim the egg before his enemies can, such as the head of IOI (Innovative Online Industries), Nolan Sorrento. The reason why I chose this analysis is because for me it felt like that subject would be potentially easy for me because I can see the level of growth the main character has within that story as chapters progressed.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Links to contact and LinkedIn page -->
+            <div class="otherLinksSep">
+                <div class="contact">
+                    <a href="contact.html">Contact Me!</a>
+                </div>
+                <div class="linkedIn">
+                    <a href="https://www.linkedin.com/in/johnnychacart/">Visit My LinkedIn Page</a>
+                </div>
+            </div>
+        </div>
+    <!-- Site version and Copyright Info (also Creator info) -->
+    <footer class="copyright">
+        <p>Site version v0.00 Pre-release<br>Copyright &copy;2020. All rights reserved.</p>
+        <details class="creator">
+            <summary class="creator">Show Creator Info</summary>
+            <p>Web coding and design by Johnny Cha</p>
+        </details>
+    </footer>
 </body>
 </html>
