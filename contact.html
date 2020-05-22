@@ -49,27 +49,37 @@
             <div class="mainPage">
                 <!-- Introduction portition -->
                 <div class="opening">
-                    <div class="textOpening">
+                    <div class="textContacts">
                         <h3>Thanks for visiting!</h3>
                         <p>I would like to thank you for visiting the site, and hoping that you will probably learn something about myself as a whole. If you have any more questions, you can contact me by these two methods listed on this page.<br><br>Until next time, I’ll hope to see you again soon!</p>
                     </div>
                 </div>
                 <!-- Quick access to various links -->
                 <div class="questions">
-                    <h3>Questions? Do so by contacting me via Email or Call!</h3>
-                    <div class="questionsBox">
-                        <div class="formFillout">
-                            <p>Do you have any more questions you want to ask about me? Please fill out this form and I will gladly respond to your questions. (Such questions like these will be put into a Frequently Asked Questions page that’s coming soon.)</p>
-                            <a href="about.html"><button>About Myself</button></a>
+                    <h3>Questions? Do so by contacting me via Form-fillout, Email or Call!</h3>
+                        <div class="questionsBox">
+                            <!-- The fill-out form method -->
+                            <div class="formFillout">
+                                <p>Do you have any more questions you want to ask about me? Please fill out this form and I will gladly respond to your questions. (Such questions like these will be put into a Frequently Asked Questions page that’s coming soon.)</p>
+                                <form action="/submit.php" target="_blank" method="POST">
+                                    <label for="name">Name:</label><br>
+                                    <input type="text" id="name" name="name"><br>
+                                    <label for="email">Email Address:</label><br>
+                                    <input type="text" id="email" name="email"><br>
+                                    <label for="askquestions">Questions you may ask about me:</label><br>
+                                    <textarea id="askquestions" name="askquestions" cols="45" rows="10"></textarea><br>
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </div>
+                            <!-- The email or call method -->
+                            <div class="emailCall">
+                                <p>Alternatively, you can email me or give me a call so that I will be willing to contact you back as soon as I can to answer your questions. (Again, such questions like these will be put into a Frequently Asked Questions page that’s coming soon.)</p>
+                                <h3>Contact me by emailing:</h3>
+                                <a href="mailto:jcha727@gmail.com">jcha727@gmail.com</a>
+                                <h3>Contact me by calling:</h3>
+                                <a href="tel:5593206442">(559) 320-6442</a>
+                            </div>
                         </div>
-                        <div class="emailCall">
-                            <p>Alternatively, you can email me or give me a call so that I will be willing to contact you back as soon as I can to answer your questions. (Again, such questions like these will be put into a Frequently Asked Questions page that’s coming soon.)</p>
-                            <h3>Contact me by emailing:</h3>
-                            <a href="mailto:jcha727@gmail.com">jcha727@gmail.com</a>
-                            <h3>Contact me by calling:</h3>
-                            <a href="tel:5593206442">(559) 320-6442</a>
-                        </div>
-                    </div>
                 </div>
             </div>
                 <!-- Links to contact and LinkedIn page -->
