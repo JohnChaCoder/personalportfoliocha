@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The Favicon image -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- The CSS Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page | JOHNNY CHA</title>
+    <!-- The JavaScript content -->
+    <script src="js/main.js"></script>
+    <!-- The message if JavaScript is not supported or is disabled -->
+    <noscript>ERROR: This site requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
+</head>
+<body>
+    <!-- The Navigation Bar -->
+    <ul class="navbar">
+        <h4>Navigation Bar</h4>
+        <li><a class="activePage">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolios</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="date">
+        <p id="clock"></p>
+    </div>
+
+    <script>
+    // Outputs the date and clock
+    var calendar = new Date();
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    //document.getElementById("clock").innerHTML = `Welcome! You've entered on ${days[calendar.getDay()]} ${months[calendar.getMonth()]} ${calendar.getDate()}, ${calendar.getFullYear()} at ${calendar.getHours()}:${calendar.getMinutes()}!`; // for modern browsers only
+    document.getElementById("clock").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (calendar.getHours()) + ':' + (calendar.getMinutes()) + '.'; // for legacy and modern browsers
+    </script>
+    <!-- The message if JavaScript is not supported or is disabled -->
+    <noscript>ERROR: This requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
+
+    <div class="displayRows_col">
+        <!-- Title of the page -->
+        <div class="title">
+            <h1>Main Page</h1>
+        </div>
+        <!-- The Main Webpage -->
+        <div class="mainPage">
+            <!-- Introduction portition -->
+            <div class="opening">
+                <div class="textOpening">
+                    <h3>Welcome to Johnny Cha's site!</h3>
+                    <p>Alright, now that you're here, let me introduce myself.<br><br>My name is Johnny Cha. I was a senior at Clovis East High School and in The Center for Advanced Research and Technology (CART), enrolled in classes that I am interested in taking. As a teenager in his age who is really into video games and in computers, I have described myself as a "tech-savvy" person that has the basic “know-how” of how these electronic devices worked, and also a “talented artist” when it comes to drawings and crafting. In almost a few years of taking computer classes at school, I have achieved basic knowledge of programming, writing, and coding in various computer-related projects at both my middle and high schools, and at CART in my Web Applications Development class, I was taking the chance to bring my knowledge a bit further by entering the world of programming and coding with HTML, CSS, and JavaScript, the three “main” parts of each and every website on the World Wide Web. In that class, I have tried my best to put in the best effort that I can to my advantage, without being distracted or side-tracked by other things. I also have to make almost everything from scratch, starting from the more simple calculator project that I had to the more intermediate and complex flexboxes and Zen Garden assignments that I had later on in the year.<br><br>If you want to learn more about myself, then click on one of the buttons below.</p>
+                </div>
+                <div class="imageOpening">
+                    <img class="imgsize" src="images/silouhette1.png" alt="Myself">
+                </div>
+            </div>
+            <!-- Quick access to various links -->
+            <div class="quickAccess">
+                <h3>Quick access</h3>
+                <p>For quick access, here are the buttons to the pages that you may be looking for on this site.</p>
+                <div class="linkboxes">
+                    <div class="aboutBox">
+                        <h2>About</h2>
+                        <p>Learn more about myself as well as my accomplishments and the four-year plans for the future.</p>
+                        <a href="about.html"><button>About Myself</button></a>
+                    </div>
+                    <div class="resumeBox">
+                        <h2>Resume</h2>
+                        <p>Take a look at my resume and learn more about my education, skills, and other expereinces.</p>
+                        <a href="resume.html"><button>My Resume</button></a>
+                    </div>
+                    <div class="portfolioBox">
+                        <h2>Portfolios</h2>
+                        <p>Come here and take a look at all of my “important” projects that I had so far during my senior year.</p>
+                        <a href="portfolio.html"><button>My Portfolio</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Links to contact and LinkedIn page -->
+            <div class="otherLinks">
+                <div class="contact">
+                    <a href="contact.html">Contact Me!</a>
+                </div>
+                <div class="linkedIn">
+                    <a href="https://www.linkedin.com/in/johnnychacart/">Visit My LinkedIn Page</a>
+                </div>
+            </div>
+        </div>
+        <!-- Site version and Copyright Info (also Creator info) -->
+        <footer class="copyright">
+            <p>Site version v0.00 Pre-release<br>Copyright &copy;2020. All rights reserved.</p>
+            <details class="creator">
+                <summary class="creator">Show Creator Info</summary>
+                <p>Web coding and design by Johnny Cha</p>
+            </details>
+        </footer>
+    </div>
+</body>
+</html>
