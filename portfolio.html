@@ -23,6 +23,20 @@
         <li><a class="activePage">Portfolios</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="date">
+        <p id="clock"></p>
+    </div>
+
+    <script>
+    // Outputs the date and clock
+    var calendar = new Date();
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    //document.getElementById("clock").innerHTML = `Welcome! You've entered on ${days[calendar.getDay()]} ${months[calendar.getMonth()]} ${calendar.getDate()}, ${calendar.getFullYear()} at ${calendar.getHours()}:${calendar.getMinutes()}!`; // for modern browsers only
+    document.getElementById("clock").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (calendar.getHours()) + ':' + (calendar.getMinutes()) + '.'; // for legacy and modern browsers
+    </script>
+    <!-- The message if JavaScript is not supported or is disabled -->
+    <noscript>ERROR: This requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
         <!--
             <ul>
                 <li><a href="websites.html">Websites</a></li>
@@ -30,6 +44,18 @@
                 <li><a href="interests.html">Interests</a></li>
             </ul>
         -->
-    <h1>This space left blank.</h1>
+        <!-- Title of the page -->
+        <div class="title">
+            <h1>Portfolios</h1>
+        </div>
+        <h1>This space left blank.</h1>
+    <!-- Site version and Copyright Info (also Creator info) -->
+    <footer class="copyright">
+        <p>Site version v0.00 Pre-release<br>Copyright &copy;2020. All rights reserved.</p>
+        <details class="creator">
+            <summary class="creator">Show Creator Info</summary>
+            <p>Web coding and design by Johnny Cha</p>
+        </details>
+    </footer>
 </body>
 </html>

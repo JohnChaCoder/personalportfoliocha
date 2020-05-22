@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(0, 0, 128);
+    background-image: url(img/win98.png);
+    background-attachment: fixed;   /* Locks the background in the same place */
+    background-position-y: top;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    animation-name: fadefrom;
+    animation-duration: 0.5s;
+    text-align: center;
+    margin: 20px;
+  }
+  @keyframes fadefrom {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  p {
+    color: white;
+    /*font-family: "Tw Cen MT";*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  a {
+    color: aqua;
+    font-family: "Ubuntu";
+    font-weight: bold;
+  }
+  h1 {
+    color: white;
+    text-shadow: 2px 2px rgb(100, 100, 100);
+    font-family: "Ubuntu";
+    font-weight: bold;
+  }
+  h2 {
+    color: white;
+    font-weight: bold;
+  }
+  h3 {
+    color: white;
+    font-weight: bold;
+  }
+  h4 {
+    color: white;
+    font-weight: bold;
+  }
+  h5 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  h6 {
+    color: white;
+    font-weight: bold;
+  }
+  .imgsize {
+    width: 200px;
+    margin: -5px;
+  }
+  /* .soundPlay{
+    height: 567px;
+    word-break: keep-all;
+  } */
+button {
+    background-color: dodgerblue;
+    border-color: rgb(0, 108, 216);
+    border-radius: 4px;
+    padding: 4px 15px;
+    color: white;
+    outline: none;
+    font-family: "Tahoma";
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
+  }
+  button:hover {
+      background-color: rgb(79, 167, 255);
+      border-color: rgb(53, 154, 255);
+      text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
+  }
+  button:active {
+      background-color: rgb(0, 100, 201);
+      border-color: rgb(0, 66, 133);
+      text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
+  }
+  .Error {
+    width: 270px;
+    border-style: double;
+    border-color: white;
+    border-radius: 10px;
+  }
+  .links {
+    margin: 1px;
+  }
+  .navbar {
+    font-style: italic;
+    border-style: double;
+    margin: -1px;
+    background-color: rgb(255,255,255);
+  }
+  .copyright {
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
+    font-family: Tahoma;
+    font-weight: bold;
+    margin-bottom: -22px;
+    font-size: 11px;
+  }
+  .maincontent {
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 23vh;
+  }

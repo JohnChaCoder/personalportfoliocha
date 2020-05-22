@@ -104,6 +104,7 @@ body {
   padding: 15px;
   text-align: center;
   border: 4px outset;
+  border-radius: 20px;
   border-top-color: rgb(255, 149, 149);
   border-left-color: rgb(221, 96, 96);
   border-bottom-color: rgb(224, 90, 90);
@@ -119,6 +120,7 @@ body {
   padding: 15px;
   text-align: center;
   border: 4px outset;
+  border-radius: 20px;
   border-top-color: rgb(255, 149, 149);
   border-left-color: rgb(221, 96, 96);
   border-bottom-color: rgb(224, 90, 90);
@@ -134,6 +136,7 @@ body {
   padding: 15px;
   text-align: center;
   border: 4px outset;
+  border-radius: 20px;
   border-top-color: rgb(255, 149, 149);
   border-left-color: rgb(221, 96, 96);
   border-bottom-color: rgb(224, 90, 90);
@@ -149,19 +152,85 @@ body {
     justify-content: center;
 }
 .contact {
-    border: 1px solid white;
-    font-family: 'Tahoma';
+    /* border: 1px solid white; */
+    font-family: 'Helvetica';
+    font-weight: bold;
     color: white;
     margin: auto;
-    padding: 15px;
+    padding: 30px;
+}
+
+.contact a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration-line: none;   /* hides underlines from links */
+}
+
+.contact a:link {
+  color: white;
+  text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+}
+
+.contact a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade2;
+  animation-duration: 0.2s;
+}
+
+@keyframes linkfade2 {
+  from {color: rgb(255, 255, 255)};
+  to {color: rgb(0, 217, 255)};
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
+  to {text-shadow: 1px 1px darkblue};
+}
+
+.contact a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
 }
 
 .linkedIn {
-    border: 1px solid goldenrod;
-    font-family: 'Tahoma';
+    /* border: 1px solid goldenrod; */
+    font-family: 'Helvetica';
+    font-weight: bold;
     color: white;
     margin: auto;
-    padding: 15px;
+    padding: 30px;
+}
+
+.linkedIn a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration-line: none;   /* hides underlines from links */
+}
+
+.linkedIn a:link {
+  color: white;
+  text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+}
+
+.linkedIn a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade3;
+  animation-duration: 0.2s;
+}
+
+@keyframes linkfade3 {
+  from {color: rgb(255, 255, 255)};
+  to {color: rgb(0, 217, 255)};
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
+  to {text-shadow: 1px 1px darkblue};
+}
+
+.linkedIn a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
 }
 
 .opening {
@@ -173,9 +242,24 @@ body {
 }
 
 .imageOpening {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 245px;
     margin: auto;
+}
+
+.imageOpening img {
+  border: 4px outset lightgray;
+}
+
+.imageAbout {
+  /* border: 1px solid red; */
+  width: 245px;
+  margin: auto;
+}
+.imageAbout img {
+  border: 4px outset red;
+  background-color: lightcoral;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.300);
 }
 
 .imgsize {
@@ -191,7 +275,7 @@ body {
 
 .textAbout {
   /* border: 1px solid blue; */
-  width: 1500px;
+  width: 85%;
   margin-left: 10px;
 }
 
@@ -248,54 +332,6 @@ li {
 summary {
   outline: none;
 }
-
-/* .formatTableDiff {
-  color: white;
-  font-style: italic;
-  font-family: Helvetica;
-  border-radius: 6px;
-  border-style: outset;
-  margin: -1px;
-  text-shadow: 1.5px 1.5px blue;
-  border-top-color: rgb(149, 198, 255);
-  border-left-color: rgb(112, 168, 221);
-  border-bottom-color: rgb(59, 64, 212);
-  border-right-color: rgb(121, 125, 255);
-  background-color: rgb(114, 145, 236);
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
-}
-.formatTableDiffInside {
-  color: white;
-  text-shadow: 1.5px 1.5px green;
-  font-style: italic;
-  font-family: Helvetica;
-  border: 2px;
-  border-radius: 4px;
-  border-style: outset;
-  margin: 0px;
-  border-top-color: rgb(149, 255, 149);
-  border-left-color: rgb(68, 185, 68);
-  border-bottom-color: rgb(9, 223, 9);
-  border-right-color: rgb(0, 189, 0);
-  background-color: rgb(111, 228, 117);
-} */
-
-/* .navbar {
-  color: white;
-  text-shadow: 1.5px 1.5px green;
-  font-style: italic;
-  font-family: Helvetica;
-  border-radius: 6px;
-  border-style: outset;
-  margin: -1px;
-  border-top-color: rgb(149, 255, 149);
-  border-left-color: rgb(68, 185, 68);
-  border-bottom-color: rgb(9, 223, 9);
-  border-right-color: rgb(0, 189, 0);
-  background-color: rgb(111, 228, 117);
-  text-align: center;
-  box-shadow: 4px 4px rgba(0, 68, 0, 0.322);
-} */
 
 .navbar {
   color: white;
@@ -381,6 +417,53 @@ a.imgSource:visited {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.500);
 } */
 
+
+.mainPage2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 4px outset;
+  border-radius: 6px;
+  margin: auto;
+  width: 95%;
+  border-top-color: rgb(149, 198, 255);
+  border-left-color: rgb(112, 168, 221);
+  border-bottom-color: rgb(59, 64, 212);
+  border-right-color: rgb(121, 125, 255);
+  background-color: rgb(114, 145, 236);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
+}
+
+.aboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;+
+  margin: auto;
+}
+
+.achivements {
+  /* border: 1px solid blue; */
+  margin: auto;
+  width: 99%;
+}
+
+.hobbies {
+  /* border: 1px solid green; */
+  width: 50%;
+  /* margin: auto; */
+  margin-left: 0.4%;
+}
+
+.fourYearPlan {
+  /* border: 1px solid yellow; */
+  width: 500px;
+  margin: auto;
+}
+
+
+
 button {
     background-color: dodgerblue;
     border-color: rgb(0, 108, 216);
@@ -394,13 +477,13 @@ button {
     text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
   }
   button:hover {
-      background-color: orange;
-      border-color: darkorange;
+      background-color: rgb(79, 167, 255);
+      border-color: rgb(53, 154, 255);
       text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
   }
   button:active {
-      background-color: rgb(185, 102, 0);
-      border-color: rgb(112, 50, 0);
+      background-color: rgb(0, 100, 201);
+      border-color: rgb(0, 66, 133);
       text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
   }
 
@@ -444,12 +527,6 @@ img {
   order: -2;
   width: 50%;
 }
-.weChoseThis {
-  /* border-color: black;
-  border-style: solid; */
-  order: 1;
-  width: 50%;
-}
 .cssValidImg {
   box-shadow: 4px 4px rgba(0, 0, 0, 0.300);
 }
@@ -488,11 +565,6 @@ img {
     border-style: solid; */
     width: 99.50%;
   }
-  .weChoseThis {
-    /* border-color: black;
-    border-style: solid; */
-    width: 99.50%;
-  }
 
 }
 
@@ -516,11 +588,6 @@ img {
     width: 99.50%;
   }
   .introduction {
-    /* border-color: black;
-    border-style: solid; */
-    width: 99.50%;
-  }
-  .weChoseThis {
     /* border-color: black;
     border-style: solid; */
     width: 99.50%;
