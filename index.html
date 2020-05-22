@@ -13,19 +13,19 @@
     <title>Main Page | JOHNNY CHA</title>
     <!-- The JavaScript content -->
     <script src="js/main.js"></script>
-    <!-- The message if JavaScript is not supported or is disabled -->
-    <noscript>This site requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
 </head>
 <body>
     <!-- The Navigation Bar -->
-    <ul class="navbar">
+    <div class="navbar">
         <h4>Navigation Bar</h4>
-        <li><a class="activePage">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="portfolio.html">Portfolios</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <ul class="navbar2">
+            <li><a class="activePage">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolios</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
     <div class="date">
         <p id="clock"></p>
     </div>
@@ -39,7 +39,7 @@
     document.getElementById("clock").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (calendar.getHours()) + ':' + (calendar.getMinutes()) + '.'; // for legacy and modern browsers
     </script>
     <!-- The message if JavaScript is not supported or is disabled -->
-    <noscript>ERROR: This requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
+    <noscript>ERROR: This functionality requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
 
     <div class="displayRows_col">
         <!-- Title of the page -->
@@ -66,17 +66,20 @@
                     <div class="aboutBox">
                         <h2>About Me</h2>
                         <p>Learn more about myself as well as my accomplishments and the four-year plans for the future.</p>
-                        <a href="about.html"><button>About Myself</button></a>
+                        <!-- <a href="about.html"><button>About Myself</button></a> -->
+                        <button onclick="document.location = 'about.html'">About Myself</button>
                     </div>
                     <div class="resumeBox">
                         <h2>My Resume</h2>
                         <p>Take a look at my resume and learn more about my education, skills, and other expereinces.</p>
-                        <a href="resume.html"><button>My Resume</button></a>
+                        <!-- <a href="resume.html"><button>My Resume</button></a> -->
+                        <button onclick="document.location = 'resume.html'">My Resume</button>
                     </div>
                     <div class="portfolioBox">
                         <h2>My Portfolios</h2>
                         <p>Come here and take a look at all of my “important” projects that I had so far during my senior year.</p>
-                        <a href="portfolio.html"><button>My Portfolio</button></a>
+                        <!-- <a href="portfolio.html"><button>My Portfolio</button></a> -->
+                        <button onclick="document.location = 'portfolio.html'">My Portfolio</button>
                     </div>
                 </div>
             </div>

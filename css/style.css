@@ -702,6 +702,77 @@ summary {
     text-shadow: 2px 2px black;
 }
 
+.navbar2 {
+  color: white;
+  font-style: italic;
+  font-family: Helvetica;
+  /* border: 4px;
+  border-radius: 6px;
+  border-style: outset; */
+  /* border: 1px solid red; */
+  margin: -1px;
+  margin-top: -2px;
+  padding-bottom: 2px;
+  text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+  /* border-top-color: rgb(149, 198, 255);
+  border-left-color: rgb(112, 168, 221);
+  border-bottom-color: rgb(59, 64, 212);
+  border-right-color: rgb(121, 125, 255);
+  background-color: rgb(114, 145, 236);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.322); */
+  text-align: center;
+}
+.navbar2 li {
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  /* border-right: 5px outset greenyellow; */
+}
+.navbar2 li:last-child {
+  border-right: none;
+}
+.navbar2 a {
+    color: white;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0); */
+    border-radius: 20px;
+    padding: 1px 10px;
+    text-decoration-line: none;   /* hides underlines from links */
+}
+.activePage {
+    font-weight: bolder;
+}
+
+.navbar2 a:link {
+    color: white;
+    text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+}
+
+.navbar2 a:hover {
+    color: rgb(176, 243, 255);
+    /* font-weight: bolder; */
+    background-color: rgba(0, 255, 255, 0.500);
+    text-shadow: 1.5px 1.5px darkblue;
+    animation-name: linkfade;
+    animation-duration: 0.2s;
+}
+
+@keyframes linkfade {
+    from {color: rgb(255, 255, 255)}
+    to {color: rgb(176, 243, 255)}
+    from {background-color: rgba(0, 255, 255, 0)}
+    to {background-color: rgba(0, 255, 255, 0.500)}
+    from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+    to {text-shadow: 1.5px 1.5px darkblue}
+  }
+
+.navbar2 a:active {
+    color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 88, 189);
+    text-shadow: 2px 2px black;
+}
+
 /* a:visited {
     color: rgb(255, 255, 255);
 } */
