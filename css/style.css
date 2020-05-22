@@ -151,13 +151,33 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+.otherLinksSep {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    border: 4px;
+    border-radius: 6px;
+    border-style: outset;
+    border-top-color: rgb(149, 198, 255);
+    border-left-color: rgb(112, 168, 221);
+    border-bottom-color: rgb(59, 64, 212);
+    border-right-color: rgb(121, 125, 255);
+    background-color: rgb(114, 145, 236);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
+}
 .contact {
     /* border: 1px solid white; */
     font-family: 'Helvetica';
     font-weight: bold;
     color: white;
+    /* background-color: aqua; */
+    border-radius: 10px;
     margin: auto;
-    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .contact a {
@@ -197,8 +217,12 @@ body {
     font-family: 'Helvetica';
     font-weight: bold;
     color: white;
+    /* background-color: aqua; */
+    border-radius: 10px;
     margin: auto;
-    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .linkedIn a {
@@ -365,7 +389,7 @@ summary {
     color: white;
     text-align: center;
     /* background-color: rgba(0, 0, 0, 0); */
-    border-radius: 20%;
+    border-radius: 20px;
     padding: 1px 10px;
     text-decoration-line: none;   /* hides underlines from links */
 }
@@ -477,7 +501,7 @@ button {
     padding: 4px 15px;
     color: white;
     outline: none;
-    font-family: "Ubuntu";
+    font-family: 'Tahoma', sans-serif;
     font-weight: bold;
     font-size: 12px;
     text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
@@ -498,12 +522,12 @@ button {
   margin-top: 0px;
   font-size: 11px;
   font-weight: bold;
-  font-family: Ubuntu;
+  font-family: 'Tahoma', sans-serif;
 }
 .copyright {
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
-  font-family: Ubuntu;
+  font-family: 'Tahoma', sans-serif;
   font-weight: bold;
   margin-bottom: -22px;
   font-size: 11px;
@@ -511,7 +535,7 @@ button {
 .creator {
     color: white;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
-    font-family: Ubuntu;
+    font-family: 'Tahoma', sans-serif;
     font-weight: bold;
     margin-bottom: -10px;
     font-size: 11px;
@@ -541,7 +565,7 @@ img {
   text-align: center;
   color: black;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
-  font-family: Tahoma;
+  font-family: 'Tahoma', sans-serif;
   font-weight: bold;
   font-size: 11px;
   order: -1;
@@ -598,5 +622,22 @@ img {
     border-style: solid; */
     width: 99.50%;
   }
+  .contact {
+    /* border: 1px solid white; */
+    font-family: 'Helvetica';
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    padding: 10px;
+}
+
+.linkedIn {
+    /* border: 1px solid goldenrod; */
+    font-family: 'Helvetica';
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    padding: 10px;
+}
 
 }
