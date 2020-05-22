@@ -893,13 +893,13 @@ img {
   width: 50%;
 }
 .cssValidImg {
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.300);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.500);
 }
 .cssValid {
   align-self: center;
   text-align: center;
-  color: black;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
+  color: white;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
   font-family: 'Tahoma', sans-serif;
   font-weight: bold;
   font-size: 11px;
