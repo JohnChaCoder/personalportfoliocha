@@ -45,6 +45,7 @@ body {
     border: 4px outset;
     border-radius: 6px;
     margin: auto;
+    padding-bottom: 30px;
     width: 95%;
     border-top-color: rgb(149, 198, 255);
     border-left-color: rgb(112, 168, 221);
@@ -402,6 +403,167 @@ body {
   text-shadow: 2px 2px black;
 }
 
+.mainPageRes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 4px outset;
+  border-radius: 6px;
+  margin: auto;
+  padding-bottom: 30px;
+  width: 95%;
+  border-top-color: rgb(149, 198, 255);
+  border-left-color: rgb(112, 168, 221);
+  border-bottom-color: rgb(59, 64, 212);
+  border-right-color: rgb(121, 125, 255);
+  background-color: rgb(114, 145, 236);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
+}
+.myResume {
+  /* border: 1px solid red; */
+  width: 68%;
+}
+.imageResume {
+  /* border: 1px solid blue; */
+  width: 480px;
+}
+.imageResume img {
+  background-color: white;
+  border: 4px outset lightgray;
+}
+.imgsizeResume {
+  width: 96%;
+  margin: auto;
+}
+
+.shortStoryInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.readyPlayerOne {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: auto;
+}
+
+.imageSStory {
+  border: 1px solid blue;
+  width: 245px;
+}
+.textSStory {
+  border: 1px solid red;
+  width: 65%;
+}
+.textSStory a {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+  text-decoration: none;
+}
+.textSStory a:link {
+  color: white;
+  text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+}
+.textSStory a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade6;
+  animation-duration: 0.05s;
+}
+@keyframes linkfade6 {
+  from {color: rgb(255, 255, 255)};
+  to {color: rgb(0, 217, 255)};
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
+  to {text-shadow: 1px 1px darkblue};
+}
+.textSStory a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
+}
+.textSStory a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.imageRP1 {
+  border: 1px solid green;
+  width: 245px;
+}
+.textRP1 {
+  border: 1px solid yellow;
+  width: 65%;
+}
+.textRP1 a {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+  text-decoration: none;
+}
+.textRP1 a:link {
+  color: white;
+  text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+}
+.textRP1 a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade7;
+  animation-duration: 0.05s;
+}
+@keyframes linkfade7 {
+  from {color: rgb(255, 255, 255)};
+  to {color: rgb(0, 217, 255)};
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
+  to {text-shadow: 1px 1px darkblue};
+}
+.textRP1 a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
+}
+.textRP1 a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.allLinks {
+  color: white;
+}
+.allLinks a {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+  text-decoration: none;
+}
+.allLinks a:link {
+  color: white;
+  text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+}
+.allLinks a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade5;
+  animation-duration: 0.05s;
+}
+@keyframes linkfade5 {
+  from {color: rgb(255, 255, 255)};
+  to {color: rgb(0, 217, 255)};
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
+  to {text-shadow: 1px 1px darkblue};
+}
+.allLinks a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
+}
+.allLinks a:visited {
+    color: rgb(255, 255, 255);
+}
 label {
   font-family: 'Tahoma', sans-serif;
   color: white;
@@ -560,6 +722,7 @@ a.imgSource:visited {
   border: 4px outset;
   border-radius: 6px;
   margin: auto;
+  padding-bottom: 30px;
   width: 95%;
   border-top-color: rgb(149, 198, 255);
   border-left-color: rgb(112, 168, 221);
