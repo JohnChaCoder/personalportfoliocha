@@ -251,10 +251,10 @@ body {
 }
 
 @keyframes linkfade2 {
-  from {color: rgb(255, 255, 255)};
-  to {color: rgb(0, 217, 255)};
-  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
-  to {text-shadow: 1px 1px darkblue};
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
 }
 
 .contact a:active {
@@ -296,10 +296,10 @@ body {
 }
 
 @keyframes linkfade3 {
-  from {color: rgb(255, 255, 255)};
-  to {color: rgb(0, 217, 255)};
-  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
-  to {text-shadow: 1px 1px darkblue};
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
 }
 
 .linkedIn a:active {
@@ -402,10 +402,10 @@ body {
 }
 
 @keyframes linkfade4 {
-  from {color: rgb(255, 255, 255)};
-  to {color: rgb(0, 217, 255)};
-  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
-  to {text-shadow: 1px 1px darkblue};
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
 }
 
 .dlHardCopy a:active {
@@ -460,7 +460,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  padding: auto;
+  padding: 0px;
 }
 
 .imageSStory {
@@ -489,10 +489,10 @@ body {
   animation-duration: 0.05s;
 }
 @keyframes linkfade6 {
-  from {color: rgb(255, 255, 255)};
-  to {color: rgb(0, 217, 255)};
-  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
-  to {text-shadow: 1px 1px darkblue};
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
 }
 .textSStory a:active {
   color: rgba(0, 0, 0, 0);
@@ -528,10 +528,10 @@ body {
   animation-duration: 0.05s;
 }
 @keyframes linkfade7 {
-  from {color: rgb(255, 255, 255)};
-  to {color: rgb(0, 217, 255)};
-  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
-  to {text-shadow: 1px 1px darkblue};
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
 }
 .textRP1 a:active {
   color: rgba(0, 0, 0, 0);
@@ -562,10 +562,10 @@ body {
   animation-duration: 0.05s;
 }
 @keyframes linkfade5 {
-  from {color: rgb(255, 255, 255)};
-  to {color: rgb(0, 217, 255)};
-  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
-  to {text-shadow: 1px 1px darkblue};
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
 }
 .allLinks a:active {
   color: rgba(0, 0, 0, 0);
@@ -688,12 +688,12 @@ summary {
 }
 
 @keyframes linkfade {
-    from {color: rgb(255, 255, 255)};
-    to {color: rgb(176, 243, 255)};
-    from {background-color: rgba(0, 255, 255, 0)};
-    to {background-color: rgba(0, 255, 255, 0.500)};
-    from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)};
-    to {text-shadow: 1px 1px darkblue};
+    from {color: rgb(255, 255, 255)}
+    to {color: rgb(176, 243, 255)}
+    from {background-color: rgba(0, 255, 255, 0)}
+    to {background-color: rgba(0, 255, 255, 0.500)}
+    from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+    to {text-shadow: 1px 1px darkblue}
   }
 
 .navbar a:active {
