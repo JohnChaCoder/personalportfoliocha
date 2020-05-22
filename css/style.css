@@ -1,6 +1,8 @@
 body {
     background-color: rgb(57, 91, 191);
     background-image: url(bg/inside-lamp-blue.jpg);
+    image-rendering: optimizeQuality;
+    image-rendering: optimizeSpeed;
     background-blend-mode: overlay;
     background-attachment: fixed;   /* Locks the background in the same place */
     background-position: center;    /* Align the background in the center */
@@ -335,9 +337,23 @@ body {
   background-color: lightcoral;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.300);
 }
+.imageAboutHobbies {
+  /* border: 1px solid red; */
+  width: 370px;
+  margin: auto;
+}
+.imageAboutHobbies img {
+  border: 4px outset red;
+  background-color: lightcoral;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.300);
+}
 
 .imgsize {
     width: 240px;
+}
+
+.imgsizeHobbies {
+  width: 360px;
 }
 
 .textOpening {
@@ -350,6 +366,12 @@ body {
 .textAbout {
   /* border: 1px solid blue; */
   width: 85%;
+  margin-left: 10px;
+}
+
+.textAboutHobbies {
+  /* border: 1px solid blue; */
+  width: 58%;
   margin-left: 10px;
 }
 
@@ -828,6 +850,10 @@ a.imgSource:visited {
 }
 
 .hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   /* border: 1px solid green; */
   width: 50%;
   /* margin: auto; */
@@ -1002,6 +1028,12 @@ img {
     width: 99.50%;
   }
 
+  .textAboutHobbies {
+    /* border: 1px solid blue; */
+    width: 98%;
+    /* margin-left: 10px; */
+  }
+
 }
 
 /* Mobile-friendly */
@@ -1057,6 +1089,12 @@ img {
     width: 98%;
     /* margin: auto; */
     margin-left: 0.4%;
+}
+
+.textAboutHobbies {
+  /* border: 1px solid blue; */
+  width: 98%;
+  /* margin-left: 10px; */
 }
 
 }
