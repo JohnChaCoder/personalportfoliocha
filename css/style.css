@@ -1,6 +1,6 @@
 body {
     background-color: rgb(57, 91, 191);
-    background-image: url(bg/inside-lamp-blue.png);
+    background-image: url(bg/inside-lamp-blue.jpg);
     background-blend-mode: overlay;
     background-attachment: fixed;   /* Locks the background in the same place */
     background-position: center;    /* Align the background in the center */
