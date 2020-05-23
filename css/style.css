@@ -435,6 +435,58 @@ body {
   text-shadow: 2px 2px black;
 }
 
+.javaCalc {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.imageCalc {
+  width: 240px;
+}
+.textCalc {
+  width: 40%;
+}
+
+.interactiveStory {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.imageIntStory {
+  width: 240px;
+}
+.textIntStory {
+  width: 40%;
+}
+
+.chessProj {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.imageChessProj {
+  width: 240px;
+}
+.textChessProj {
+  width: 40%;
+}
+
+.zenGarden {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.imageZenGarden {
+  width: 240px;
+}
+.textZenGarden {
+  width: 40%;
+}
+
 .mainPageRes {
   display: flex;
   flex-wrap: wrap;
