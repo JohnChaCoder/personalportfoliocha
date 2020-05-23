@@ -486,11 +486,11 @@ body {
 }
 
 .imageSStory {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 245px;
 }
 .textSStory {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 65%;
 }
 .textSStory a {
@@ -525,11 +525,11 @@ body {
 }
 
 .imageRP1 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 245px;
 }
 .textRP1 {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   width: 65%;
 }
 .textRP1 a {
