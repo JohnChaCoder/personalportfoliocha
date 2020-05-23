@@ -440,6 +440,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 .imageCalc {
   width: 240px;
@@ -453,6 +454,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 .imageIntStory {
   width: 240px;
@@ -466,6 +468,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 .imageChessProj {
   width: 240px;
@@ -479,6 +482,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 .imageZenGarden {
   width: 240px;
