@@ -240,7 +240,7 @@ body {
 
 .formFillout {
   /* border: 1px solid steelblue; */
-  width: 380px;
+  width: 450px;
   margin: auto;
   padding: 15px;
   border: 4px outset;
@@ -255,8 +255,8 @@ body {
 
 .emailCall {
   /* border: 1px solid steelblue; */
-  width: 380px;
-  height: 410px;
+  width: 450px;
+  height: 450px;
   margin: auto;
   padding: 15px;
   border: 4px outset;
@@ -1229,6 +1229,20 @@ img {
   /* border: 1px solid blue; */
   width: 98%;
   /* margin-left: 10px; */
+}
+
+.formFillout {
+  width: 390px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.emailCall {
+  width: 390px;
+  height: 450px;
+  margin: auto;
+  padding: 15px;
 }
 
 }
