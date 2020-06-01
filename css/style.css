@@ -32,6 +32,14 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
+.displayRows_css {
+  margin: auto;
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .textStyleAndShadows {
   color: white;
