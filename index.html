@@ -27,17 +27,41 @@
         </ul>
     </div>
     <!-- The Clock -->
-    <div class="date">
-        <p id="clock"></p>
-    </div>
+    <div id="calendar"></div>
 
     <script>
-    // Outputs the date and clock
-    var calendar = new Date();
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    //document.getElementById("clock").innerHTML = `Welcome! You've entered on ${days[calendar.getDay()]} ${months[calendar.getMonth()]} ${calendar.getDate()}, ${calendar.getFullYear()} at ${calendar.getHours()}:${calendar.getMinutes()}!`; // for modern browsers only
-    document.getElementById("clock").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (calendar.getHours()) + ':' + (calendar.getMinutes()) + '.'; // for legacy and modern browsers
+    function getCalendar() {
+        // Outputs the date and clock
+        var calendar = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var hours = calendar.getHours();
+        var minutes = calendar.getMinutes();
+        var seconds = calendar.getSeconds();
+        var midday = "AM";
+        hours = checkClockTime(hours)
+        minutes = checkClockTime(minutes);
+        seconds = checkClockTime(seconds);
+
+        if (hours == 0) {
+            hours = 12;
+        }
+
+        if (hours > 12) {
+            hours = hours - 12;
+            midday = "PM";
+        }
+
+        document.getElementById("calendar").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (hours) + ':' + (minutes) + ' ' + (midday) + '.'; // for legacy and modern browsers
+        var timeout = setTimeout(getCalendar, 500);
+    }
+
+    getCalendar();  // call function
+
+    function checkClockTime(zero) {
+        if (zero < 10) {zero = "0" + zero};
+        return zero;
+    }
     </script>
     <!-- The message if JavaScript is not supported or is disabled -->
     <noscript>ERROR: This functionality requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
@@ -56,7 +80,7 @@
                     <p>Alright, now that you're here, let me introduce myself.<br><br>My name is Johnny Cha. I was a senior at Clovis East High School and in The Center for Advanced Research and Technology (CART), enrolled in classes that I am interested in taking. As a teenager in his age who is really into video games and in computers, I have described myself as a "tech-savvy" person that has the basic “know-how” of how these electronic devices worked, and also a “talented artist” when it comes to drawings and crafting.<br><br>In almost a few years of taking computer classes at school, I have achieved basic knowledge of programming, writing, and coding in various computer-related projects at both my middle and high schools, and at CART in my Web Applications Development class, I was taking the chance to bring my knowledge a bit further by entering the world of programming and coding with <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript, the three “main” parts of each and every website on the World Wide Web. In that class, I have tried my best to put in the best effort that I can to my advantage, without being distracted or side-tracked by other things. I also have to make almost everything from scratch, starting from the more simple calculator project that I had to the more intermediate and complex flexboxes and Zen Garden assignments that I had later on in the year.<br><br>If you want to learn more about myself, then click on one of the buttons below.</p>
                 </div>
                 <div class="imageOpening">
-                    <img class="imgsize" src="images/silouhette1.png" alt="Myself">
+                    <img class="imgsize" src="images/silouhette1.png" title="Who is this shadowy figure? Find out in the About page!" alt="Myself">
                 </div>
             </div>
             <!-- Quick access to various links -->

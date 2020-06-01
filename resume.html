@@ -27,17 +27,41 @@
         </ul>
     </div>
     <!-- The Clock -->
-    <div class="date">
-        <p id="clock"></p>
-    </div>
+    <div id="calendar"></div>
 
     <script>
-    // Outputs the date and clock
-    var calendar = new Date();
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    //document.getElementById("clock").innerHTML = `Welcome! You've entered on ${days[calendar.getDay()]} ${months[calendar.getMonth()]} ${calendar.getDate()}, ${calendar.getFullYear()} at ${calendar.getHours()}:${calendar.getMinutes()}!`; // for modern browsers only
-    document.getElementById("clock").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (calendar.getHours()) + ':' + (calendar.getMinutes()) + '.'; // for legacy and modern browsers
+    function getCalendar() {
+        // Outputs the date and clock
+        var calendar = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var hours = calendar.getHours();
+        var minutes = calendar.getMinutes();
+        var seconds = calendar.getSeconds();
+        var midday = "AM";
+        hours = checkClockTime(hours)
+        minutes = checkClockTime(minutes);
+        seconds = checkClockTime(seconds);
+
+        if (hours == 0) {
+            hours = 12;
+        }
+
+        if (hours > 12) {
+            hours = hours - 12;
+            midday = "PM";
+        }
+
+        document.getElementById("calendar").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (hours) + ':' + (minutes) + ' ' + (midday) + '.'; // for legacy and modern browsers
+        var timeout = setTimeout(getCalendar, 500);
+    }
+
+    getCalendar();  // call function
+
+    function checkClockTime(zero) {
+        if (zero < 10) {zero = "0" + zero};
+        return zero;
+    }
     </script>
     <!-- The message if JavaScript is not supported or is disabled -->
     <noscript>ERROR: This functionality requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>

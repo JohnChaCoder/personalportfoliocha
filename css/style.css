@@ -93,6 +93,48 @@ body {
     text-align: center;
 }
 
+#calendar {
+  font-family: Tahoma, sans-serif;
+  color: white;
+  font-size: 16px;
+  border: 4px;
+  border-radius: 6px;
+  border-style: outset;
+  width: 320px;
+  margin: auto;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+  border-top-color: rgb(149, 198, 255);
+  border-left-color: rgb(112, 168, 221);
+  border-bottom-color: rgb(59, 64, 212);
+  border-right-color: rgb(121, 125, 255);
+  background-color: rgb(114, 145, 236);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
+  text-align: center;
+}
+
+#clock {
+  font-family: Tahoma, sans-serif;
+  color: white;
+  font-size: 16px;
+  border: 4px;
+  border-radius: 6px;
+  border-style: outset;
+  width: 320px;
+  margin: auto;
+  text-shadow: 1.5px 1.5px rgb(76, 76, 168);
+  border-top-color: rgb(149, 198, 255);
+  border-left-color: rgb(112, 168, 221);
+  border-bottom-color: rgb(59, 64, 212);
+  border-right-color: rgb(121, 125, 255);
+  background-color: rgb(114, 145, 236);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
+  text-align: center;
+}
+
 .linkboxes {
   display: flex;
   flex-wrap: wrap;
