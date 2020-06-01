@@ -13,8 +13,14 @@
         background-blend-mode: overlay;
         background-attachment: fixed;   /* Locks the background in the same place */
         background-position: center;    /* Align the background in the center */
+        animation-name: fadefrom;
+        animation-duration: 0.5s;
         text-align: center;
         margin: 20px;
+    }
+    @keyframes fadefrom {
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
     p {
         color: white;
@@ -58,6 +64,9 @@
         font-weight: bold;
     }
     .imgsize {
+        border: 5px outset lightblue;
+        background-color: dodgerblue;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.500);
         width: 200px;
         margin: -5px;
     }
@@ -114,7 +123,22 @@
     .maincontent {
         /* border: 1px solid red; */
         margin: auto;
-        margin-top: 23vh;
+        margin-top: 18vh;
+    }
+    .cssValidImg {
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.500);
+    }
+    .cssValid {
+        align-self: center;
+        text-align: center;
+        color: white;
+        text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.500);
+        font-family: 'Tahoma', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    .cssValid_Main {
+        margin-top: 40px;
     }
     </style>
     <!-- This is an external font for the Ubuntu Typeface -->
@@ -125,15 +149,24 @@
 </head>
 <body>
     <div class="maincontent">
-        <h1>Thanks!</h1>
+        <h1>Thank you!</h1>
         <img class="imgsize" src="images/dualshock.png" alt="image"/>
         <p>Your response has been sent.<br><br>To return to the main page, click on the button below.</p>
         
         <a href=index.html><button>Back</button></a>
 
         <footer class="copyright">
-            <p class="copyright">Site version v0.00 Pre-release<br>Copyright &copy;2020. All rights reserved.<br><br>Web coding and design by Johnny Cha</b></p>
+            <p class="copyright">Site version v0.50 Beta<br>Copyright &copy;2020. All rights reserved.<br><br>Web coding and design by Johnny Cha</b></p>
         </footer>
+        <!-- CSS Validator -->
+        <div class="cssValid_Main">
+            <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchasitenotfinished-do-not-access.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+                <img style="border:0;width:88px;height:31px" class="cssValidImg"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+            </a>
+            <p class="cssValid">This website is CSS level 3 + SVG compliant.</p>
+        </div>
     </div>
 </body>
 </html>

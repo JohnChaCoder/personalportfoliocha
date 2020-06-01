@@ -3,7 +3,7 @@ This is the changelog for my Personal Porfolio Website for CART.
 I will continuously update this as time goes on.
 
 Pre-Alpha - April 2020 - May 21, 2020
--------------------------------------
+-------------------------------------------------------
 
 - Began and completed The Top 10 Professional Portfolio Websites that inspired me to do this project (April 2020 - May 1, 2020)
 
@@ -16,8 +16,20 @@ Pre-Alpha - April 2020 - May 21, 2020
 - Finished written content for the site (May 21, 2020)
 
 Pre-release - May 21-22, 2020
--------------------------------------
+-------------------------------------------------------
 
 - Began applying written content on the site
 
 - Began applying styling content on the site (CSS)
+
+Initial release (v0.00) - May 22, 2020
+-------------------------------------------------------
+
+- Initial release of the Personal Portfolio Website
+
+Further releases (v0.00+) - May 22, 2020 - present
+-------------------------------------------------------
+
+- Updates and changes to improve usability, stability, and accessibility to the site
+
+- Changes and improvements to the various visuals of the site
