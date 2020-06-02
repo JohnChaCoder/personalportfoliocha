@@ -55,6 +55,7 @@ body {
     border: 4px outset;
     border-radius: 6px;
     margin: auto;
+    margin-bottom: 10px;
     padding-bottom: 30px;
     width: 95%;
     border-top-color: rgb(149, 198, 255);
@@ -229,6 +230,12 @@ body {
     border-right-color: rgb(121, 125, 255);
     background-color: rgb(114, 145, 236);
     box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
+}
+
+.questions {
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .questionsBox {
@@ -411,18 +418,21 @@ body {
     width: 1400px;
     margin: auto;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .textAbout {
   /* border: 1px solid blue; */
   width: 85%;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .textAboutHobbies {
   /* border: 1px solid blue; */
   width: 58%;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .textContacts {
@@ -430,6 +440,7 @@ body {
   /* width: 1400px; */
   margin: auto;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .downloadLinksResume {
@@ -437,7 +448,8 @@ body {
   border: 4px outset;
   border-radius: 6px;
   margin: auto;
-  width: 95%;
+  margin-bottom: 10px;
+  width: 30%;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top-color: rgb(149, 198, 255);
@@ -502,6 +514,35 @@ body {
 .textCalc {
   /* border: 1px solid black; */
   width: 40%;
+  margin-bottom: 20px;
+}
+
+.textCalc a {
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+  text-decoration: none;
+  color: white;
+}
+
+.textCalc a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade5;
+  animation-duration: 0.08s;
+}
+
+@keyframes linkfade5 {
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
+}
+
+.textCalc a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
 }
 
 .interactiveStory {
@@ -522,6 +563,34 @@ body {
   width: 40%;
 }
 
+.textIntStory a {
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+  text-decoration: none;
+  color: white;
+}
+
+.textIntStory a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade6;
+  animation-duration: 0.08s;
+}
+
+@keyframes linkfade6 {
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
+}
+
+.textIntStory a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
+}
+
 .chessProj {
   display: flex;
   flex-wrap: wrap;
@@ -537,6 +606,35 @@ body {
 }
 .textChessProj {
   width: 40%;
+  margin-bottom: 20px;
+}
+
+.textChessProj a {
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+  text-decoration: none;
+  color: white;
+}
+
+.textChessProj a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade7;
+  animation-duration: 0.08s;
+}
+
+@keyframes linkfade7 {
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
+}
+
+.textChessProj a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
 }
 
 .zenGarden {
@@ -556,6 +654,34 @@ body {
   width: 40%;
 }
 
+.textZenGarden a {
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.500);
+  text-decoration: none;
+  color: white;
+}
+
+.textZenGarden a:hover {
+  color: rgb(0, 217, 255);
+  /* font-weight: bolder; */
+  text-shadow: 1px 1px darkblue;
+  animation-name: linkfade8;
+  animation-duration: 0.08s;
+}
+
+@keyframes linkfade8 {
+  from {color: rgb(255, 255, 255)}
+  to {color: rgb(0, 217, 255)}
+  from {text-shadow: 1.5px 1.5px rgb(76, 76, 168)}
+  to {text-shadow: 1px 1px darkblue}
+}
+
+.textZenGarden a:active {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px black;
+}
+
 .mainPageRes {
   display: flex;
   flex-wrap: wrap;
@@ -564,6 +690,7 @@ body {
   border: 4px outset;
   border-radius: 6px;
   margin: auto;
+  margin-bottom: 10px;
   padding-bottom: 30px;
   width: 95%;
   border-top-color: rgb(149, 198, 255);
@@ -949,6 +1076,7 @@ a.imgSource:visited {
   border: 4px outset;
   border-radius: 6px;
   margin: auto;
+  margin-bottom: 10px;
   padding-bottom: 30px;
   width: 95%;
   border-top-color: rgb(149, 198, 255);
@@ -1048,7 +1176,78 @@ a.imgSource:visited {
   box-shadow: 4px 4px rgba(0, 0, 0, 0.322);
 }
 
+.hobbiesInfo {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
+.websitesTitle {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textCalc {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textIntStory {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textChessProj {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textZenGarden {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textVG {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textVid {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textDraw {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text3D {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textComp {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textMusic {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textPhotoAndVid {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textCars {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 button {
     background-color: dodgerblue;
@@ -1168,6 +1367,22 @@ img {
     /* margin-left: 10px; */
   }
 
+  .textCalc {
+    width: 85%;
+  }
+  
+  .textIntStory {
+    width: 85%;
+  }
+  
+  .textChessProj {
+    width: 85%;
+  }
+  
+  .textZenGarden {
+    width: 85%;
+  }
+
 }
 
 /* Mobile-friendly */
@@ -1229,6 +1444,70 @@ img {
   /* border: 1px solid blue; */
   width: 98%;
   /* margin-left: 10px; */
+}
+
+.aboutBox {
+  margin-bottom: 10px;
+}
+
+.resumeBox {
+  margin-bottom: 10px;
+}
+
+.webBox {
+  margin-bottom: 10px;
+}
+
+.englishBox {
+  margin-bottom: 10px;
+}
+
+.textCalc {
+  width: 85%;
+}
+
+.textIntStory {
+  width: 85%;
+}
+
+.textChessProj {
+  width: 85%;
+}
+
+.textZenGarden {
+  width: 85%;
+}
+
+.imageCalc {
+  text-align: center;
+}
+
+.imageIntStory {
+  text-align: center;
+}
+
+.imageChessProj {
+  text-align: center;
+}
+
+.imageZenGarden {
+  text-align: center;
+}
+
+.imgsizeCalc {
+  width: 85%;
+}
+
+.imgsizeIS {
+  width: 85%;
+}
+
+.imgsizeChess {
+  width: 85%;
+}
+
+.imgsizeZen {
+  width: 85%;
 }
 
 .formFillout {
