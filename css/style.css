@@ -449,7 +449,7 @@ body {
   border-radius: 6px;
   margin: auto;
   margin-bottom: 10px;
-  width: 30%;
+  width: 370px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top-color: rgb(149, 198, 255);
@@ -1463,19 +1463,19 @@ img {
 }
 
 .textCalc {
-  width: 85%;
+  width: 65%;
 }
 
 .textIntStory {
-  width: 85%;
+  width: 65%;
 }
 
 .textChessProj {
-  width: 85%;
+  width: 65%;
 }
 
 .textZenGarden {
-  width: 85%;
+  width: 65%;
 }
 
 .imageCalc {
@@ -1495,19 +1495,19 @@ img {
 }
 
 .imgsizeCalc {
-  width: 85%;
+  width: 65%;
 }
 
 .imgsizeIS {
-  width: 85%;
+  width: 65%;
 }
 
 .imgsizeChess {
-  width: 85%;
+  width: 65%;
 }
 
 .imgsizeZen {
-  width: 85%;
+  width: 65%;
 }
 
 .formFillout {
@@ -1522,6 +1522,18 @@ img {
   height: 450px;
   margin: auto;
   padding: 15px;
+}
+
+.displayRows_css {
+  display: unset;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  justify-content: right;
+}
+
+.cssValid {
+  text-align: right;
+  margin-bottom: 20px;
 }
 
 }
