@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The Favicon image -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- The CSS Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- This is an external font for the Ubuntu and Sarabun Typefaces -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Computers | JOHNNY CHA</title>
+    <!-- The JavaScript content -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- The Navigation Bar -->
+    <div class="navbar">
+        <h4>Navigation Bar</h4>
+        <ul class="navbar2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolios</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- The Clock -->
+    <div id="calendar"></div>
+
+    <script>
+    function getCalendar() {
+        // Outputs the date and clock
+        var calendar = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var hours = calendar.getHours();
+        var minutes = calendar.getMinutes();
+        var seconds = calendar.getSeconds();
+        var midday = "AM";
+        hours = checkClockTime(hours)
+        minutes = checkClockTime(minutes);
+        seconds = checkClockTime(seconds);
+
+        if (hours == 0) {
+            hours = 12;
+        }
+
+        if (hours > 12) {
+            hours = hours - 12;
+            midday = "PM";
+        }
+
+        document.getElementById("calendar").innerHTML = 'All times are based on your time-zone. Today is ' + (days[calendar.getDay()]) + ' ' + (months[calendar.getMonth()]) + ' ' + (calendar.getDate()) + ',' + ' ' + (calendar.getFullYear()) + ' ' + 'at' + ' ' + (hours) + ':' + (minutes) + ' ' + (midday) + '.'; // for legacy and modern browsers
+        var timeout = setTimeout(getCalendar, 500);
+    }
+
+    getCalendar();  // call function
+
+    function checkClockTime(zero) {
+        if (zero < 10) {zero = "0" + zero};
+        return zero;
+    }
+    </script>
+    <!-- The message if JavaScript is not supported or is disabled -->
+    <noscript>ERROR: This functionality requires JavaScript, which is either not supported in your browser or is disabled. Please turn JavaScript on if you have not done so, otherwise please upgrade or view this on a supported browser.</noscript>
+        <!-- Title of the page -->
+        <div class="title">
+            <h1>Computers</h1>
+        </div>
+        <!-- The Main Webpage -->
+        <div class="displayRows">
+            <div class="mainPage2">
+                <!-- <div class="hobbiesInfo">
+                    <h3>Lots of hobbies and interests!</h3>
+                    <p>That’s right, here I have listed eight different hobbies and interests that I have at the moment. This is going to be a long ride, are you ready?<br><br>Then let's begin!</p>
+                </div> -->
+                <div class="compHardSoft">
+                    <!-- <div class="imageComp">
+                        <img class="imgsize" src="images/bust.png" alt="Myself">
+                    </div> -->
+                    <div class="textComp">
+                        <h3>Computer Hardware & Software</h3>
+                        <p>The first computer that me and my family had was a Compaq Presario 7000 PC that originally ran Windows Me (Millenium Edition, the last 9x-based OS from Microsoft’s Windows line of operating systems that was known for its infamous OS instability and rushed release in 2000) before I was born, which was presumably upgraded to the NT-based Windows XP around 2001 when it was released to the general public in October of that year. With an Intel Pentium 4 processor, a Nvidia-based graphics card, a Sound Blaster-based sound card, a 320 GB hard disk drive and with 4 MB of memory, this computer served well throughout the mid-2000’s, until it was replaced with an HP Pavilion media center computer running Windows Vista from 2008 onwards.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Links to contact and LinkedIn page -->
+            <div class="otherLinksSep">
+                <div class="contact">
+                    <a href="contact.html">Contact Me!</a>
+                </div>
+                <div class="linkedIn">
+                    <a href="https://www.linkedin.com/in/johnnychacart/">Visit My LinkedIn Page</a>
+                </div>
+            </div>
+        </div>
+    <!-- Site version and Copyright Info (also Creator info) -->
+    <footer class="copyright">
+        <p>Site version v0.50 Beta<br>Copyright &copy;2020. All rights reserved.</p>
+        <details class="creator">
+            <summary class="creator">Show Creator Info</summary>
+            <p>Web coding and design by Johnny Cha</p>
+        </details>
+    </footer>
+    <!-- CSS Validator -->
+    <div class="displayRows_css">
+        <div class="cssValid">
+            <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjchapersonalportfolio.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+                <img style="border:0;width:88px;height:31px" class="cssValidImg"
+                    src="images/vcss-blue.gif"
+                    alt="Valid CSS!" />
+            </a>
+            <p class="cssValid">This website is CSS level 3 + SVG compliant.</p>
+        </div>
+    </div>
+</body>
+</html>
